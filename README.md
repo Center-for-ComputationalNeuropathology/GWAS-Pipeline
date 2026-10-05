@@ -13,6 +13,14 @@ Date: February 2025
 
 This pipeline provides a standardized workflow for GWAS analysis, including quality control, imputation, ancestry prediction, and association testing. The pipeline is designed to work with genotype data and includes tools for handling population stratification and relatedness.
 
+## 🆕 TOPMed-imputation pipeline (multi-array case/control): `CBD_TOPMed_GWAS/`
+
+A configurable, LSF-ready pipeline used for the CBD GWAS: RICOPILI pre-imputation QC → hg38 liftover →
+**TOPMed Imputation Server** → per-cohort filtering → multi-array merge → sample/variant QC
+(incl. differential missingness) → PCA → PLINK2 Firth GWAS → LocusZoom-ready summary statistics,
+Manhattan/QQ plots. See **[CBD_TOPMed_GWAS/README.md](CBD_TOPMed_GWAS/README.md)** for step-by-step
+instructions with examples. The sections below describe the original (1000G / Minimac4) workflow.
+
 ## Pipeline Structure
 
 1. Sample and SNP QC: Data Cleaning

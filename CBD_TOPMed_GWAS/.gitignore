@@ -1,0 +1,61 @@
+# ---- local configuration & secrets (never commit) ----
+config/config.sh
+config/cohorts.tsv
+config/topmed_passwords.tsv
+*.password
+*.key
+
+# ---- genotype / sample data (lives outside the repo; belt and braces) ----
+*.bed
+*.bim
+*.fam
+*.pgen
+*.pvar
+*.psam
+*.vcf
+*.vcf.gz
+*.bcf
+*.tbi
+*.csi
+*.zip
+*.dose.*
+*.info.gz
+*.eigenvec
+*.eigenval
+*.glm.*
+*.frq
+*.afreq
+*.genome
+*.smiss
+*.vmiss
+*.imiss
+*.lmiss
+*.nosex
+*.irem
+*.prune.in
+*.prune.out
+*.tsv.gz
+
+# sample-level lists (participant IDs)
+cases*.txt
+controls*.txt
+*ids*.txt
+*samples*.txt
+*covariate*.txt
+FINAL_*.txt
+
+# ---- run artefacts ----
+logs/
+*.log
+*.out
+*.err
+pipeline_output/
+
+# ---- editors / OS ----
+.DS_Store
+*.swp
+*~
+.Rhistory
+.RData
+.vscode/
+.idea/

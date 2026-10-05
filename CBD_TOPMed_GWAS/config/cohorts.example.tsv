@@ -1,0 +1,17 @@
+# One row per genotyping batch. Tab-separated. Lines starting with '#' are ignored.
+# The FIRST row is used as the base dataset when cohorts are merged (step 06).
+#
+# cohort        short name used for all output files and for the TOPMed sub-directory
+#               (IMPUTED_DIR/<cohort>/chr*.dose.vcf.gz)
+# raw_dir       sub-directory of RAW_DIR holding the raw PLINK files
+# raw_bfile     raw PLINK prefix (no extension) given to RICOPILI
+# qc_prefix     RICOPILI output prefix in RAW_DIR/<raw_dir>/qc/ (without .bed)
+# description   free text
+#
+#cohort	raw_dir	raw_bfile	qc_prefix	description
+CBD	CBD	cbd_69_pheno	cbd_cbd1_eur_sk-qc1	69 new CBD cases (GSA array)
+CBD_2	CBD_GWAS_2	v5cbd	cbd_cbd1_eur_sk-qc1	152 Mayo CBD cases (hg18, 1/2 allele coding - see README)
+GSA	gsa	gsa_pheno	cbd_gsa1_eur_sk-qc1	GSA-array controls
+Illumina	illumina	illumina_pheno	cbd_illu1_eur_sk-qc1	Illumina-array samples (controls + 151 CBD cases also present in CBD_2)
+Express	express	express_pheno	cbd_expr1_eur_sk-qc1	Express-array controls
+ExpressExome	expressExome	expressExome_pheno	cbd_exex1_eur_sk-qc1	ExpressExome-array controls
